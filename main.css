@@ -7,7 +7,7 @@ body {
     font-family: 'Comfortaa', sans-serif;
     font-size: 1.5vmin;
     font-weight: 400;
-    background-color: #6f6f6f;
+    background-color: #353535;
     user-select: none;
 }
 
@@ -23,16 +23,17 @@ body {
 .input {
     box-shadow: 0vmin 0vmin 1vmin #0000004d;
     width: 85vmin;
+    font-weight: 700;
     height: 0vmin;
     border-radius: 2vmin;
     padding: 1.3vmin 2vmin;
-    background-color: #6f6f6f;
-    color: #fff;
+    background-color: #282828;
+    color: #d9d9d9;
     font-size: 1.2vmin;
 }
 
 .copy {
-    background-color: rgb(57, 57, 57);
+    background-color: rgb(46, 46, 46);
     width: 50%;
     height: 5vmin;
     margin-top: 1vmin;
