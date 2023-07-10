@@ -9,6 +9,7 @@ body {
     font-weight: 400;
     background-color: #353535;
     user-select: none;
+    --input-size: 42vmin;
 }
 
 .wrapper {
@@ -20,9 +21,44 @@ body {
     align-items: end;
 }
 
+.block {
+    width: 90vmin;
+    background-color: #4f4f4f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0vmin 0vmin 1vmin #0000004d;
+    padding: 1vmin;
+    border-radius: 2vmin;
+}
+
+.plus{
+    font-size: 3vmin;
+    font-weight: 700;
+}
+
+.inputs{
+    display: flex;
+    column-gap: 1vmin;
+    align-items: center;
+    color: #282828;
+}
+
 .input {
     box-shadow: 0vmin 0vmin 1vmin #0000004d;
-    width: 85vmin;
+    width: var(--input-size);
+    font-weight: 700;
+    height: 0vmin;
+    border-radius: 2vmin;
+    padding: 1.3vmin 2vmin;
+    background-color: #282828;
+    color: #d9d9d9;
+    font-size: 1.2vmin;
+}
+
+.dop{
+    box-shadow: 0vmin 0vmin 1vmin #0000004d;
+    width: var(--input-size);
     font-weight: 700;
     height: 0vmin;
     border-radius: 2vmin;
@@ -35,25 +71,28 @@ body {
 .copy {
     background-color: rgb(46, 46, 46);
     width: 50%;
-    height: 5vmin;
+    height: 4.5vmin;
     margin-top: 1vmin;
     border-radius: 2vmin;
     box-shadow: 0vmin 0vmin 1vmin #0000004d;
     text-transform: uppercase;
     color: #ffffff47;
-    font-size: 5vmin;
+    font-size: 4vmin;
     overflow: hidden;
     letter-spacing: 3vmin;
     justify-content: center;
     display: flex;
 }
 
-.block {
-    background-color: #4f4f4f;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0vmin 0vmin 1vmin #0000004d;
-    padding: 1vmin;
-    border-radius: 2vmin;
+.anim{
+    animation: anim 0.1s forwards;
+}
+
+@keyframes anim{
+    0%{
+        background-color: none;
+    }
+    100%{
+        background-color: #1c1c1c;
+    }
 }
