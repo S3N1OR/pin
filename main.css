@@ -19,10 +19,11 @@ body {
     padding: 3vmin 3vmin;
     justify-content: space-between;
     align-items: end;
+    column-gap: 15vmin;
 }
 
 .block {
-    width: 90vmin;
+    width: 100%;
     background-color: #4f4f4f;
     display: flex;
     align-items: center;
