@@ -7,17 +7,16 @@ body {
     font-family: 'Comfortaa', sans-serif;
     font-size: 1.5vmin;
     font-weight: 400;
-    background-color: #353535;
+    background-color: #2a2a2ab0;
     user-select: none;
     --input-size: 42vmin;
 }
 
 .wrapper {
-    display: flex;
-    row-gap: 3vmin;
-    padding: 3vmin 3vmin;
-    align-items: end;
-    column-gap: 15vmin;
+    padding: 5vmin;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vmin 5vmin;
 }
 
 .block {
@@ -37,6 +36,7 @@ body {
 }
 
 .inputs{
+    width: 100%;
     display: flex;
     column-gap: 1vmin;
     align-items: center;
@@ -45,7 +45,7 @@ body {
 
 .input {
     box-shadow: 0vmin 0vmin 1vmin #0000004d;
-    width: var(--input-size);
+    width: 100%;
     font-weight: 700;
     height: 0vmin;
     border-radius: 2vmin;
@@ -57,7 +57,7 @@ body {
 
 .dop{
     box-shadow: 0vmin 0vmin 1vmin #0000004d;
-    width: var(--input-size);
+    width: 100%;
     font-weight: 700;
     height: 0vmin;
     border-radius: 2vmin;
@@ -69,7 +69,8 @@ body {
 
 .copy {
     background-color: rgb(46, 46, 46);
-    width: 50%;
+    padding-top: 0.2vmin;
+    width: 100%;
     height: 4.5vmin;
     margin-top: 1vmin;
     border-radius: 2vmin;
