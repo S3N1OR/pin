@@ -14,10 +14,8 @@ body {
 
 .wrapper {
     display: flex;
-    flex-wrap: wrap;
     row-gap: 3vmin;
     padding: 3vmin 3vmin;
-    justify-content: space-between;
     align-items: end;
     column-gap: 15vmin;
 }
